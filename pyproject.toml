@@ -1,0 +1,18 @@
+[build-system]
+requires = ["poetry-core>=1.8.0"]
+build-backend = "poetry.core.masonry.api"
+
+[tool.poetry]
+name = "openapi-agent-mcp"
+version = "0.1.0"
+description = "MCP tools for inspecting FastAPI /openapi.json"
+readme = "README.md"
+packages = [{ include = "openapi_agent_mcp", from = "src" }]
+
+[tool.poetry.dependencies]
+python = ">=3.11"
+mcp = "*"
+
+[tool.poetry.scripts]
+openapi-agent-mcp = "openapi_agent_mcp.cli:main"
+openapi-agent-mcp-server = "openapi_agent_mcp.server:main"
