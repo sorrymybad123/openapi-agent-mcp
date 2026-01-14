@@ -7,6 +7,7 @@ An MCP server + CLI that consumes a FastAPI OpenAPI spec from `{baseUrl}/openapi
 - get response schema (`get_response_schema`)
 
 See `openapi_agent_mcp_spec.md` for the protocol and output conventions.
+Community-friendly overview: `docs/README.md`.
 
 ## Development Setup
 
